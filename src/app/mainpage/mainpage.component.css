@@ -1,0 +1,408 @@
+.header-item--logo,
+.header-layout--left-center .header-item--logo,
+.header-layout--left-center .header-item--icons {
+    -webkit-box-flex: 0 1 100px;
+    -ms-flex: 0 1 100px;
+    flex: 0 1 100px;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .header-item--logo,
+    .header-layout--left-center .header-item--logo,
+    .header-layout--left-center .header-item--icons {
+        -webkit-box-flex: 0 0 120px;
+        -ms-flex: 0 0 120px;
+        flex: 0 0 120px;
+    }
+}
+
+.site-header__logo a {
+    max-width: 100px;
+}
+
+.is-light .site-header__logo .logo--inverted {
+    max-width: 100px;
+}
+
+@media only screen and (min-width: 769px) {
+    .site-header__logo a {
+        max-width: 120px;
+    }
+
+    .is-light .site-header__logo .logo--inverted {
+        max-width: 120px;
+    }
+}
+
+@font-face {
+    font-family: "Caslon Old Face";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("//simpleshoes.com/cdn/fonts/caslon_old_face/caslonoldface_n4.5ec79973aabe5a1e13045c503c295f0a181f2677.woff2?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=d301f689a8eefebba135869f7cd2c870986d46d5376d4444ee68b25bc0f666f8") format("woff2"),
+        url("//simpleshoes.com/cdn/fonts/caslon_old_face/caslonoldface_n4.21ccf42aab064b7ede20359401f65c93d8cb4713.woff?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=1fe6a758b9f7a71f804cde2545d73a6a2bba3291cd87c17c2f554b25545f03bc") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("//simpleshoes.com/cdn/fonts/roboto_mono/robotomono_n4.51de4936ec86c873f336650ecdd83f75339514dc.woff2?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=64c320d25449db61f4bbc34e781f62d79bdd89fe1c3443b3370ffa72804b55ce") format("woff2"),
+        url("//simpleshoes.com/cdn/fonts/roboto_mono/robotomono_n4.da9d27ab89288b399497cb44acfe1d30e9676372.woff?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=08b899edfaab2d3a130e99b1fdc4d9d6f7955a5484f97457b3e9871cd71d0cae") format("woff");
+}
+
+
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("//simpleshoes.com/cdn/fonts/roboto_mono/robotomono_i4.b4b20a596eee24265657dbe933d0fc9912a48227.woff2?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=109b802f8d167d44038d2890fd453c91ef39731730639d850b997e52ccf906e3") format("woff2"),
+        url("//simpleshoes.com/cdn/fonts/roboto_mono/robotomono_i4.edc0bdcd58d25a2acafb9d238b815faaf4233d95.woff?h1=c2ltcGxlc2hvZXMuY29t&h2=c2ltcGxlLXNob2VzLWRlbmlzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=03c43461e7e859253b29c1c99343f6bf65e975ce7da377f7ee2ab9ed6624dde0") format("woff");
+}
+
+:root {
+    --typeHeaderPrimary: "Caslon Old Face";
+    --typeHeaderFallback: serif;
+    --typeHeaderSize: 33px;
+    --typeHeaderWeight: 400;
+    --typeHeaderLineHeight: 1.2;
+    --typeHeaderSpacing: 0.0em;
+
+    --typeBasePrimary: "Roboto Mono";
+    --typeBaseFallback: sans-serif;
+    --typeBaseSize: 12px;
+    --typeBaseWeight: 400;
+    --typeBaseLineHeight: 1.6;
+    --typeBaseSpacing: 0.0em;
+
+    --iconWeight: 3px;
+    --iconLinecaps: miter;
+}
+
+
+.collection-hero__content:before,
+.hero__image-wrapper:before .hero__media:before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+.skrim__item-content .skrim__overlay:after {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 30%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+.placeholder-content {
+    background-image: linear-gradient(100deg, #ffffff 40%, #f7f7f7 63%, #ffffff 79%);
+}
+
+@font-face {
+    font-family: 'Kanit-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Kanit/latin/kanit_latin_italic_400.woff2);
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Kanit/latin/kanit_latin_italic_700.woff2);
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Kanit/latin/kanit_latin_regular_400.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Kanit/latin/kanit_latin_regular_700.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Nunito-Sans/latin/nunito-sans_latin_italic_400.woff2);
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Nunito-Sans/latin/nunito-sans_latin_italic_700.woff2);
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Nunito-Sans/latin/nunito-sans_latin_regular_400.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Nunito-Sans/latin/nunito-sans_latin_regular_700.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_italic_400.woff2);
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_italic_700.woff2);
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_regular_400_2.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Klaviyo-Hosted';
+    src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_regular_700.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.go3176171171 {
+    color: #000000;
+    line-height: normal;
+}
+
+.go3176171171 p {
+    margin: 0px;
+}
+
+.go3176171171 span {
+    display: inline;
+}
+
+.go3176171171 ol,
+.go3176171171 ul {
+    padding: 0 0 0 48px;
+    margin: 0;
+}
+
+.go3176171171 ul {
+    list-style-type: disc;
+}
+
+.go3176171171 li {
+    line-height: 18px;
+}
+
+.go3176171171 a {
+    color: #0066cc;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+.go1596356512>div {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.go1102772938.go1102772938.go1102772938 [data-testid='form-row'] {
+    margin-bottom: calc((1 - 1) * 1%);
+}
+
+.go1272136950.go1272136950.go1272136950::before {
+    content: '';
+    background-color: rgba(20, 20, 20, 0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 90000;
+    opacity: 1;
+}
+
+.go3905350356.go3905350356.go3905350356::before {
+    content: '';
+    height: 100%;
+    background-color: rgba(184, 181, 179, 1);
+    top: -50%;
+    width: 100%;
+    position: absolute;
+}
+
+.go3241907364.go3241907364.go3241907364::before {
+    content: '';
+    display: block;
+    min-height: 20px;
+    width: 100%;
+}
+
+.go3241907364.go3241907364.go3241907364::after {
+    content: '';
+    display: block;
+    min-height: 20px;
+    width: 100%;
+}
+
+.go4012349103.go4012349103.go4012349103::placeholder {
+    color: #767676;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.go4012349103.go4012349103.go4012349103::-moz-placeholder {
+    line-height: 50px;
+}
+
+.go4012349103.go4012349103.go4012349103:hover {
+    border-color: #000000 !important;
+}
+
+.go279450927.go279450927.go279450927:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.go3298969293.go3298969293.go3298969293::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: 8px;
+    border-width: 8px;
+    top: -15px;
+    border-color: transparent transparent rgb(255, 244, 240) transparent;
+}
+
+.go3298969293.go3298969293.go3298969293::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px;
+    left: 7px;
+    top: -17px;
+    border-color: transparent transparent #D0331F transparent;
+}
+
+
+@media screen and (max-width: 750px) {
+    #dynamic-checkout-cart {
+        min-height: 300px;
+    }
+}
+
+.site-nav__link,
+.site-nav__dropdown-link {
+    font-size: 18px;
+}
+
+.site-header {
+    border-bottom: 1px solid;
+    border-bottom-color: #e8e8e1;
+}
+
+.slideshow__slide--d12d8857-1fd3-4cbe-b6d8-6ad967a10093-1667838942677fde15-0 .hero__title {
+    font-size: 40.0px;
+}
+
+@media only screen and (min-width: 769px) {
+    .slideshow__slide--d12d8857-1fd3-4cbe-b6d8-6ad967a10093-1667838942677fde15-0 .hero__title {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-natural-mobile--d12d8857-1fd3-4cbe-b6d8-6ad967a10093 {
+        height: 0;
+        padding-bottom: 146.875%;
+    }
+}
+
+.hero__image--d12d8857-1fd3-4cbe-b6d8-6ad967a10093-1667838942677fde15-0 {
+    object-position: bottom center;
+    font-family: "object-fit: cover; object-position: bottom center;";
+}
+
+
+.section--only-text {
+    background-color: #efefef;
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900&family=Oswald:ital,wght@0,400&family=Roboto+Mono:ital,wght@0,400&display=swap';
+
+
+@media only screen and (min-width: 769px) {
+    .footer__item--7009e6d2-7a80-4b63-94bd-cb831f41af7c {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--6c8e223c-e6f1-4150-9214-3ee7d60bc8e5 {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--27f4cab5-e412-4cfb-8890-fdf6de149315 {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--64b4a015-f780-49a1-a420-00c7c111e462 {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--1494301487049 {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--1494292485313 {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer__item--4e47b2a0-c394-4719-b2a9-d6f6b9fdc948 {
+        width: 25%;
+    }
+}
